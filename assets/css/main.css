@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;700;100;1500&family=Rubik&display=swap");
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa";
+}
+
+/* NAVBAR */
+#NavBar {
+    position: fixed;
+    height: 60px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.NavBar-Wrapper {
+  padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.Logo {
+    float: left;
+    margin-top: 5px;
+    margin-left: 28px;
+    font-size: 1.5em;
+    height: 10px;
+    width: auto;
+}
+
+#NavBar ul {
+    float: right;
+    list-style: none;
+    margin-top: -2px;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+}
+
+#NavBar li {
+    display: inline-block;
+}
+
+#NavBar li a {
+    color: #303030;
+    display: block;
+    font-size: 0.8em;
+    height: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; 
+}
+
+#NavBar li a:hover { 
+    color: #5a5a5a;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+/* hover line */
+#NavBar li a:before, #NavBar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 4px;
+    background: purple;
+}
+
+#NavBar li a:before {
+    left: 0;
+    transition: 0.5s;
+}
+
+#NavBar li a:after {
+    background: purple;
+    right: 0;
+}
+
+#NavBar li a:hover:before {
+    background: purple;
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+#NavBar li a:hover:after {
+    background: transparent;
+    width: 100%;
+}
+
+.Contents {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-top: 10%;
+  gap: 250px;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContentsTitle {
+  font-size: 4em;
+  padding-top: 28%;
+  font-weight: 1000;
+  background: -webkit-linear-gradient(135deg, #ac489b, #6a2c90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ContentsText {
+  padding-top: 10%;
+  font-size: 1.2em;
+  color: #303030;
+}
+
+.download_app {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10%;
+  gap: 50px;
+}
+
+.Contents img {
+  width: 130%;
+  height: auto;
+}
+
+.Copy {
+  position: fixed;
+  bottom: 5%;
+  left: 17%;
+}
+
+.CopyText {
+  font-size: 0.7em;
+  font-weight: 900;
+}
+
+.CopyText Span {
+  font-weight: 100;
+}
+
+
+.SideImage img {
+  max-width: 150%;
+  height: auto;
+  bottom: 18%;
+}
